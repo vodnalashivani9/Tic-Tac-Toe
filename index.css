@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    height: 100%;
+  }
+
+  h1 {
+    font-size: 40px;
+    color: #333; /* Dark Gray */
+  }
+
+  body {
+    font-family: "Arial", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #f0f0f0; /* Light Gray */
+  }
+
+  .board {
+    width: 300px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .cell {
+    font-size: 4rem;
+    border: 1px solid #333; /* Dark Gray */
+    text-align: center;
+    padding-top: 12px;
+    cursor: pointer;
+    user-select: none;
+    background-color: #fff;
+  }
+
+  .statusText {
+    font-size: 30px;
+    color: #333; 
+  }
+
+  .restartBtn {
+    background-color: #333; 
+    color: #fff; 
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .restartBtn:hover {
+    background-color: #222;
+  }
+
+  .winning-cell {
+    background-color: darkgreen;
+    color: #fff;
+  }
